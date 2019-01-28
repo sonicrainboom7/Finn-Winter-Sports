@@ -864,7 +864,7 @@ MonoBehaviour:
   steamMiddle: {fileID: 1261197438}
   steamCloud: {fileID: 1094833466245774, guid: f87de0c55d5780f4aa7fab9ab165c6ea, type: 2}
   timeText: {fileID: 1143920308}
-  startingTimer: 3.5
+  startingTimer: 3
   speedMod: 1
 --- !u!4 &1191033056
 Transform:

@@ -6,11 +6,14 @@ public class SaunaSteamMover : MonoBehaviour {
     public float speed;
     private SaunaSteamController controlScript;
     private float speedModifier;
+    private float constantSpeedMod;
     public float lifeTime;
     // Use this for initialization
     void Start () {
         controlScript = GameObject.Find("GameController").GetComponent<SaunaSteamController>();
         speedModifier = controlScript.speedMod;
+        constantSpeedMod = speedModifier;  // this is to make sure the steam doesnt get faster while moving
+        
 	}
 	
 	// Update is called once per frame
@@ -20,6 +23,6 @@ public class SaunaSteamMover : MonoBehaviour {
         {
             Destroy(gameObject);
         }
-        transform.position += -transform.right * Time.deltaTime * speed * speedModifier;
+        transform.position += -transform.right * Time.deltaTime * speed * constantSpeedMod;
     }
 }
