@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class SaunaSteamMover : MonoBehaviour {
     public float speed;
-    private SaunaSteamController controlScript;
+    private SaunaGameController controlScript;
     private float speedModifier;
     private float constantSpeedMod;
     public float lifeTime;
     // Use this for initialization
     void Start () {
-        controlScript = GameObject.Find("GameController").GetComponent<SaunaSteamController>();
+        controlScript = GameObject.Find("GameController").GetComponent<SaunaGameController>();
         speedModifier = controlScript.speedMod;
         constantSpeedMod = speedModifier;  // this is to make sure the steam doesnt get faster while moving
         
