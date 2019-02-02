@@ -21,23 +21,23 @@ public class SaunaLeaderBoard : MonoBehaviour {
         newName = name;
         for (int i = 0; i < 5; i++)
         {
-            if (PlayerPrefs.HasKey(i + "HScore"))
+            if (PlayerPrefs.HasKey(i + "SaunaHScore"))
             {
-                if (PlayerPrefs.GetFloat(i + "HScore") < newScore)
+                if (PlayerPrefs.GetFloat(i + "SaunaHScore") < newScore)
                 {
                     // new score is higher than the stored score
-                    oldScore = PlayerPrefs.GetFloat(i + "HScore");
-                    oldName = PlayerPrefs.GetString(i + "HScoreName");
-                    PlayerPrefs.SetFloat(i + "HScore", newScore);
-                    PlayerPrefs.SetString(i + "HScoreName", newName);
+                    oldScore = PlayerPrefs.GetFloat(i + "SaunaHScore");
+                    oldName = PlayerPrefs.GetString(i + "SaunaHScoreName");
+                    PlayerPrefs.SetFloat(i + "SaunaHScore", newScore);
+                    PlayerPrefs.SetString(i + "SaunaHScoreName", newName);
                     newScore = oldScore;
                     newName = oldName;
                 }
             }
             else
             {
-                PlayerPrefs.SetFloat(i + "HScore", newScore);
-                PlayerPrefs.SetString(i + "HScoreName", newName);
+                PlayerPrefs.SetFloat(i + "SaunaHScore", newScore);
+                PlayerPrefs.SetString(i + "SaunaHScoreName", newName);
                 newScore = 0;
                 newName = "";
             }
@@ -48,7 +48,7 @@ public class SaunaLeaderBoard : MonoBehaviour {
     {
         for (int i = 0; i < 5; i++)
         {
-            namesText[i].text = PlayerPrefs.GetString(i + "HScoreName") + " : " + PlayerPrefs.GetFloat(i + "HScore");
+            namesText[i].text = PlayerPrefs.GetString(i + "SaunaHScoreName") + " : " + PlayerPrefs.GetFloat(i + "SaunaHScore");
         }
     }
 }

@@ -8,11 +8,12 @@ public class MainMenuController : MonoBehaviour {
     public Text nameText;
     public InputField playerName;
     public Button nameButton;
-    public Button saunaButton;    //Add more buttons here for more games
+    public Button saunaButton, barNightButton;    //Add more buttons here for more games
                                   // Use this for initialization
     void Start() {
         nameButton.onClick.AddListener(AddName);
         saunaButton.onClick.AddListener(delegate{StartGame(1);});
+        barNightButton.onClick.AddListener(delegate { StartGame(2); });
     }
 	
 	// Update is called once per frame
@@ -26,11 +27,6 @@ public class MainMenuController : MonoBehaviour {
     }
     void StartGame(int index)
     {
-        switch (index) {
-            case 1:
-                SceneManager.LoadScene(index);
-                break;
-
-            }
+      SceneManager.LoadScene(index);
     }
 }

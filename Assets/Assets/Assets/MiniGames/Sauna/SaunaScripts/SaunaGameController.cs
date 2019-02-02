@@ -204,7 +204,7 @@ public class SaunaGameController : MonoBehaviour
     {
         timeRunning = false;
         endCanvas.SetActive(true);
-        leaderBoard.AddRecord(PlayerPrefs.GetString("Name", "Anonymous"), (Mathf.Round(time * 100f) / 100f));  //Add the players name and time to the leaderboard
+        leaderBoard.AddRecord(PlayerPrefs.GetString("Name", "Anonymous"), (Mathf.Round(time * 100f) / 100f));  //Add the players name and Score to the leaderboard
         leaderBoard.GetHighScores();
         
     }

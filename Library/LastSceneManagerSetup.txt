@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Assets/Assets/MiniGames/Sauna/SaunaGame.unity
+- path: Assets/Assets/Assets/MainMenu/MainMenu.unity
   isLoaded: 1
   isActive: 1
