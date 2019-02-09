@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Assets/Assets/MiniGames/Sauna/SaunaGame.unity
     guid: 8475fa09e254b6f4e900033bae65f33a
+  - enabled: 1
+    path: Assets/Assets/Assets/MiniGames/Bar Night/BarNight.unity
+    guid: 68fae0c9094f4f948b7c9b4b5bb80571
   m_configObjects: {}

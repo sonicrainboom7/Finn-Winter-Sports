@@ -313,6 +313,10 @@
     <Compile Include="Assets\Assets\Assets\MiniGames\Bar Night\BarNightScripts\BarNightPlayerMovement.cs" />
     <Compile Include="Assets\Assets\Assets\MiniGames\Bar Night\BarNightScripts\ItemMover.cs" />
     <Compile Include="Assets\Assets\Assets\MiniGames\Bar Night\BarNightScripts\ItemSpawner.cs" />
+    <Compile Include="Assets\Assets\Assets\MiniGames\Christmas Buffet\BuffetScripts\BuffetGameController.cs" />
+    <Compile Include="Assets\Assets\Assets\MiniGames\Christmas Buffet\BuffetScripts\ButtonController.cs" />
+    <Compile Include="Assets\Assets\Assets\MiniGames\Christmas Buffet\BuffetScripts\FoodMover.cs" />
+    <Compile Include="Assets\Assets\Assets\MiniGames\Christmas Buffet\BuffetScripts\FoodSpawner.cs" />
     <Compile Include="Assets\Assets\Assets\MiniGames\Sauna\SaunaScripts\SaunaGameController.cs" />
     <Compile Include="Assets\Assets\Assets\MiniGames\Sauna\SaunaScripts\SaunaLeaderBoard.cs" />
     <Compile Include="Assets\Assets\Assets\MiniGames\Sauna\SaunaScripts\SaunaPlayer.cs" />
