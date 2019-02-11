@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BarNightPlayerMovement : MonoBehaviour {
     public float speed;
@@ -10,6 +11,7 @@ public class BarNightPlayerMovement : MonoBehaviour {
     private float startDirectionTimer;
     private bool moveLeft, moveRight;
     public float drunkenessLevel;
+    public Text lives;
     private BarNightGameController controllerScript;
     // Use this for initialization
     void Start () {
@@ -18,6 +20,7 @@ public class BarNightPlayerMovement : MonoBehaviour {
         moveRight = false;
         moveLeft = false;
         hp = maxHp;
+        lives.text = "Lives : " + hp;
 	}
 	
 	// Update is called once per frame
@@ -64,6 +67,7 @@ public class BarNightPlayerMovement : MonoBehaviour {
         if (col.gameObject.tag == "Obstacle")
         {
             hp -= 1;
+            lives.text = "Lives : " + hp;
             Destroy(col.gameObject);
             if (hp <= 0)
             {

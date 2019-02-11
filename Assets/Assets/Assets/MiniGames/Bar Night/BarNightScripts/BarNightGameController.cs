@@ -12,6 +12,8 @@ public class BarNightGameController : MonoBehaviour {
     public GameObject endCanvas;
     public Button leaveGame;
     public Text pointsText;
+    public Text lives;
+    public GameObject[] spawners;
     private BarNightPlayerMovement playerScript;
     private BarNightLeaderBoard leaderBoard;
     // Use this for initialization
@@ -31,13 +33,16 @@ public class BarNightGameController : MonoBehaviour {
             realTime += Time.deltaTime;
             speedMod = (realTime / 60) + 1;
             scoreTime += Time.deltaTime * playerScript.drunkenessLevel;
-            Debug.Log(scoreTime);
             pointsText.text = "Points : " + (Mathf.Round(scoreTime * 100f) / 100f);
         }
 		
 	}
     public void GameOver()
     {
+        for (int i = spawners.Length - 1; i >= 0; i--)
+        {
+            Destroy(spawners[i].gameObject);
+        }
         timeRunning = false;
         endCanvas.SetActive(true);
         leaderBoard.AddRecord(PlayerPrefs.GetString("Name", "Anonymous"), (Mathf.Round(scoreTime * 100f) / 100f));  //Add the players name and Score to the leaderboard

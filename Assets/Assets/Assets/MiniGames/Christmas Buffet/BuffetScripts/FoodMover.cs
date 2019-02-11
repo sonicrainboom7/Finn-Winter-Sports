@@ -26,4 +26,12 @@ public class FoodMover : MonoBehaviour
         }
 
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "KillZone")
+        {
+            controllerScript.hp--;
+            Destroy(gameObject);
+        }
+    }
 }
