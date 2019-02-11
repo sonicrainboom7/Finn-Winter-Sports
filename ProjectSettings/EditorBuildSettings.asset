@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Assets/Assets/MiniGames/Bar Night/BarNight.unity
     guid: 68fae0c9094f4f948b7c9b4b5bb80571
+  - enabled: 1
+    path: Assets/Assets/Assets/MiniGames/Christmas Buffet/ChristmasBuffet.unity
+    guid: 4b01ab4df465e3d46b3afc11361da682
   m_configObjects: {}

@@ -314,6 +314,7 @@
     <Compile Include="Assets\Assets\Assets\MiniGames\Bar Night\BarNightScripts\ItemMover.cs" />
     <Compile Include="Assets\Assets\Assets\MiniGames\Bar Night\BarNightScripts\ItemSpawner.cs" />
     <Compile Include="Assets\Assets\Assets\MiniGames\Christmas Buffet\BuffetScripts\BuffetGameController.cs" />
+    <Compile Include="Assets\Assets\Assets\MiniGames\Christmas Buffet\BuffetScripts\BuffetLeaderBoard.cs" />
     <Compile Include="Assets\Assets\Assets\MiniGames\Christmas Buffet\BuffetScripts\ButtonController.cs" />
     <Compile Include="Assets\Assets\Assets\MiniGames\Christmas Buffet\BuffetScripts\FoodMover.cs" />
     <Compile Include="Assets\Assets\Assets\MiniGames\Christmas Buffet\BuffetScripts\FoodSpawner.cs" />
