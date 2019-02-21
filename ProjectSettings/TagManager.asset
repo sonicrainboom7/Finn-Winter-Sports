@@ -4,12 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Steam
-  - Beer
-  - Obstacle
-  - A
+  - KillZone
   - S
+  - A
   - D
+  - End
   layers:
   - Default
   - TransparentFX

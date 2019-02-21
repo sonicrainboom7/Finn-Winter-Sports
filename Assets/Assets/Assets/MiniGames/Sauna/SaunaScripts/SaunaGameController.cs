@@ -88,6 +88,7 @@ public class SaunaGameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (timeRunning == true)
         {
             time += Time.deltaTime;

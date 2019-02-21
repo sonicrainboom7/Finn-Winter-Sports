@@ -1169,6 +1169,10 @@ MonoBehaviour:
   timer: {fileID: 1787314212}
   lives: {fileID: 54683007}
   leaveGame: {fileID: 734162853}
+  spawners:
+  - {fileID: 1960011519}
+  - {fileID: 1368824217}
+  - {fileID: 312110624}
   hp: 3
 --- !u!114 &1938954488
 MonoBehaviour:
