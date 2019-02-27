@@ -507,7 +507,7 @@ MonoBehaviour:
   saunaButton: {fileID: 339859803}
   barNightButton: {fileID: 1689393061}
   buffetButton: {fileID: 191246209}
-  santaButton: {fileID: 0}
+  santaButton: {fileID: 1701365332}
 --- !u!4 &341026464
 Transform:
   m_ObjectHideFlags: 0
