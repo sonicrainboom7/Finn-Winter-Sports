@@ -8,7 +8,7 @@ public class MainMenuController : MonoBehaviour {
     public Text nameText;
     public InputField playerName;
     public Button nameButton;
-    public Button saunaButton, barNightButton, buffetButton, santaButton;    //Add more buttons here for more games
+    public Button saunaButton, barNightButton, buffetButton, santaButton, fireworksButton;    //Add more buttons here for more games
                                   // Use this for initialization
     void Start() {
         playerName.text = PlayerPrefs.GetString("Name");
@@ -17,6 +17,7 @@ public class MainMenuController : MonoBehaviour {
         barNightButton.onClick.AddListener(delegate { StartGame(2); });
         buffetButton.onClick.AddListener(delegate { StartGame(3); });
         santaButton.onClick.AddListener(delegate { StartGame(4); });
+        fireworksButton.onClick.AddListener(delegate { StartGame(5); });
     }
 	
 	// Update is called once per frame

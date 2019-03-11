@@ -1,0 +1,2 @@
+C:\Users\Tomi Veijalainen\Documents\FinnWinterSports\Temp\UnityVS_obj\Debug\Unity.TextMeshPro.csprojResolveAssemblyReference.cache
+C:\Users\Tomi Veijalainen\Documents\FinnWinterSports\Temp\UnityVS_obj\Debug\Unity.TextMeshPro.csproj.CoreCompileInputs.cache

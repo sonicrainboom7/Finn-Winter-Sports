@@ -319,6 +319,9 @@
     <Compile Include="Assets\Assets\Assets\MiniGames\Christmas Buffet\BuffetScripts\FoodMover.cs" />
     <Compile Include="Assets\Assets\Assets\MiniGames\Christmas Buffet\BuffetScripts\FoodSpawner.cs" />
     <Compile Include="Assets\Assets\Assets\MiniGames\Fireworks\Fireworks Scripts\AimingControls.cs" />
+    <Compile Include="Assets\Assets\Assets\MiniGames\Fireworks\Fireworks Scripts\FireworkScript.cs" />
+    <Compile Include="Assets\Assets\Assets\MiniGames\Fireworks\Fireworks Scripts\FireworksGameController.cs" />
+    <Compile Include="Assets\Assets\Assets\MiniGames\Fireworks\Fireworks Scripts\FireworksLeaderBoard.cs" />
     <Compile Include="Assets\Assets\Assets\MiniGames\Fireworks\Fireworks Scripts\ShootingControls.cs" />
     <Compile Include="Assets\Assets\Assets\MiniGames\SantaPresents\SantaScripts\SantaControls.cs" />
     <Compile Include="Assets\Assets\Assets\MiniGames\SantaPresents\SantaScripts\SantaGameController.cs" />
