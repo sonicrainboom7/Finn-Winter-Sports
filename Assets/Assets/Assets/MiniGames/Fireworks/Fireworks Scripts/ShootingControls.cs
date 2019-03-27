@@ -21,9 +21,12 @@ public class ShootingControls : MonoBehaviour {
         windSpeed = Mathf.Round(Random.Range(-10f, 10f));
         
 	}
+
+   
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         dir = player.position - aim.position;
         if (windSpeed <= 0)
         {

@@ -8,14 +8,14 @@ public class SaunaPlayer : MonoBehaviour {
     private float hp;
     public float maxHp;
     private Color c;
-    private Renderer rend;
+    private SpriteRenderer rend;
     // Use this for initialization
     void Start () {
         controlScript = GameObject.Find("GameController").GetComponent<SaunaGameController>();
-        rend = GetComponent<Renderer>();
+        rend = GameObject.Find("Hemmo_o2").GetComponent<SpriteRenderer>();
         transform.position = middle.position;
         hp = maxHp;
-        c = Color.black;
+        c = Color.white;
         rend.material.SetColor("_Color", c);
 
 	}
@@ -36,7 +36,7 @@ public class SaunaPlayer : MonoBehaviour {
             Destroy(gameObject);
         }
 
-        c = Color.Lerp(Color.red, Color.black, (hp / 100));  //Gradually change color when player is damaged
+        c = Color.Lerp(Color.red, Color.white, (hp / 100));  //Gradually change color when player is damaged
         rend.material.SetColor("_Color", c);
 
         if (Input.anyKeyDown) { 

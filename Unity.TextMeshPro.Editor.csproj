@@ -390,6 +390,12 @@
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackageManagerWindow.uxml" />
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackageSearchFilterTabs.uxml" />
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackagesLoading.uxml" />
+    <None Include="Packages\com.unity.vectorgraphics\Editor\Shaders\VectorWeightMap.shader" />
+    <None Include="Packages\com.unity.vectorgraphics\Runtime\External\Clipper\License.txt" />
+    <None Include="Packages\com.unity.vectorgraphics\Runtime\External\LibTessDotNet\LICENSE.txt" />
+    <None Include="Packages\com.unity.vectorgraphics\Runtime\Materials\Vector.shader" />
+    <None Include="Packages\com.unity.vectorgraphics\Runtime\Materials\VectorExpandEdges.shader" />
+    <None Include="Packages\com.unity.vectorgraphics\Runtime\Materials\VectorGradient.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

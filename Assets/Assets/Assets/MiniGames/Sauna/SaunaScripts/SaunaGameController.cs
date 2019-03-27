@@ -19,6 +19,10 @@ public class SaunaGameController : MonoBehaviour
     public GameObject endCanvas;
     private SaunaLeaderBoard leaderBoard;
     public Button leaveGame;
+    public AudioClip hiss;
+    public AudioSource hissSource;
+    private float saunaHissTimer;
+   // public AudioSource audio;
     // Use this for initialization
     void Start()
     {
@@ -88,6 +92,13 @@ public class SaunaGameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        saunaHissTimer += Time.deltaTime;
+
+        if(saunaHissTimer >= 15f)
+        {
+            hissSource.PlayOneShot(hiss, 0.5f);
+            saunaHissTimer = 0;
+        }
         
         if (timeRunning == true)
         {

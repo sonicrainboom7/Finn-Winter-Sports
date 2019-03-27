@@ -288,6 +288,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.VectorGraphics.csproj">
+      <Project>{077946F4-9AB5-ADFA-FE5A-378F825A7CFB}</Project>
+      <Name>Unity.VectorGraphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.InternalAPIEditorBridge.003.csproj">
+      <Project>{8FDCBFF9-688D-76AA-EE12-1872792FF616}</Project>
+      <Name>Unity.InternalAPIEditorBridge.003</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEditor.StandardEvents.csproj">
       <Project>{6800202F-4402-D405-F8CB-03DC7BD78B92}</Project>
       <Name>UnityEditor.StandardEvents</Name>
@@ -299,6 +307,10 @@
     <ProjectReference Include="Unity.PackageManagerUI.Editor.csproj">
       <Project>{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}</Project>
       <Name>Unity.PackageManagerUI.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VectorGraphics.Editor.csproj">
+      <Project>{BE01F43C-726A-8B9B-DEC1-E5C4E3536C5C}</Project>
+      <Name>Unity.VectorGraphics.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{07A21C90-D344-AE1A-8456-9910C203B41A}</Project>
@@ -343,6 +355,12 @@
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackageManagerWindow.uxml" />
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackageSearchFilterTabs.uxml" />
     <None Include="Packages\com.unity.package-manager-ui\Editor\Resources\Templates\PackagesLoading.uxml" />
+    <None Include="Packages\com.unity.vectorgraphics\Editor\Shaders\VectorWeightMap.shader" />
+    <None Include="Packages\com.unity.vectorgraphics\Runtime\External\Clipper\License.txt" />
+    <None Include="Packages\com.unity.vectorgraphics\Runtime\External\LibTessDotNet\LICENSE.txt" />
+    <None Include="Packages\com.unity.vectorgraphics\Runtime\Materials\Vector.shader" />
+    <None Include="Packages\com.unity.vectorgraphics\Runtime\Materials\VectorExpandEdges.shader" />
+    <None Include="Packages\com.unity.vectorgraphics\Runtime\Materials\VectorGradient.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
