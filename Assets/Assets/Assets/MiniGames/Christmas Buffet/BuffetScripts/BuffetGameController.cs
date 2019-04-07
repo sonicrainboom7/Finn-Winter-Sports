@@ -52,6 +52,7 @@ public class BuffetGameController : MonoBehaviour {
     }
     void BackToMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
 }

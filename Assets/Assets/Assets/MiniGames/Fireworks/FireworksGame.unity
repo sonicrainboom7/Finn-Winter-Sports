@@ -113,6 +113,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &56571657 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1380478181212590, guid: 7aceb3e914b7bd84c841454841e4989c,
+    type: 2}
+  m_PrefabInternal: {fileID: 987243131}
 --- !u!1 &161356265
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,6 +689,48 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1134101779}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1001 &987243131
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4360592033694980, guid: 7aceb3e914b7bd84c841454841e4989c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.06881156
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360592033694980, guid: 7aceb3e914b7bd84c841454841e4989c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.7502464
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360592033694980, guid: 7aceb3e914b7bd84c841454841e4989c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1.6777344
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360592033694980, guid: 7aceb3e914b7bd84c841454841e4989c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360592033694980, guid: 7aceb3e914b7bd84c841454841e4989c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360592033694980, guid: 7aceb3e914b7bd84c841454841e4989c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360592033694980, guid: 7aceb3e914b7bd84c841454841e4989c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360592033694980, guid: 7aceb3e914b7bd84c841454841e4989c, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7aceb3e914b7bd84c841454841e4989c, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1098579415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,6 +1245,12 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1786298513 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114328670484115642, guid: 7aceb3e914b7bd84c841454841e4989c,
+    type: 2}
+  m_PrefabInternal: {fileID: 987243131}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1786962877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,6 +1347,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1809151520 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114991661663177110, guid: 7aceb3e914b7bd84c841454841e4989c,
+    type: 2}
+  m_PrefabInternal: {fileID: 987243131}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1911945787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,6 +1363,7 @@ GameObject:
   - component: {fileID: 1911945790}
   - component: {fileID: 1911945789}
   - component: {fileID: 1911945788}
+  - component: {fileID: 1911945791}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -1354,6 +1414,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1911945791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1911945787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa4b1683df6b7234c8416093fd541780, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unPause: {fileID: 1809151520}
+  leave: {fileID: 1786298513}
+  player: {fileID: 161356265}
+  pauseCanvas: {fileID: 56571657}
 --- !u!114 &1995271673 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114433608898580634, guid: e15b86e55716fce479308b7cd7268548,
