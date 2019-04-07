@@ -38,7 +38,7 @@ public class ShootingControls : MonoBehaviour {
         }
         if (Input.GetMouseButton(0))   //Gather power for shot while holding down left click
         {
-            power += Time.deltaTime * 3;
+            power += Time.deltaTime * 5;
             powerSlider.value = power;
            // Debug.Log(powerSlider.value);
             if (power >= maxPower)

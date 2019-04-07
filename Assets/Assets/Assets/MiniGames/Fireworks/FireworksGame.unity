@@ -1399,6 +1399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b782650f4e8a6d24594bef9978cecfbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 161356265}
   leaveGame: {fileID: 2106712838}
   endCanvas: {fileID: 1175772039}
 --- !u!4 &1911945790

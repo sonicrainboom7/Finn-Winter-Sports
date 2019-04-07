@@ -28,7 +28,7 @@ public class Pausehandler : MonoBehaviour {
     {
         if (player != null)
         {
-            player.SetActive(false);  // if the player has controls tha twork during pause, this makes sure they wont work
+            player.SetActive(false);  // if the player has controls that work during pause, this makes sure they wont work
         }
         Time.timeScale = 0;
         pauseCanvas.SetActive(true);

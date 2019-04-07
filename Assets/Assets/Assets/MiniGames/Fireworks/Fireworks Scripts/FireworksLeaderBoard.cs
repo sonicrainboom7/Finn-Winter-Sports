@@ -24,9 +24,9 @@ public class FireworksLeaderBoard : MonoBehaviour
         {
             if (PlayerPrefs.HasKey(i + "FwHScore"))
             {
-                if (PlayerPrefs.GetFloat(i + "FwHScore") >= newScore)  // reverse of other leaderboards because fewer shots means better result
+                if (PlayerPrefs.GetFloat(i + "FwHScore") >= newScore)
                 {
-                    // new score is lower than the stored score
+                    
                     oldScore = PlayerPrefs.GetFloat(i + "FwHScore");
                     oldName = PlayerPrefs.GetString(i + "FwHScoreName");
                     PlayerPrefs.SetFloat(i + "FwHScore", newScore);
@@ -47,7 +47,7 @@ public class FireworksLeaderBoard : MonoBehaviour
     }
     public void GetHighScores()
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = 4; i > -1; i--)
         {
             namesText[i].text = PlayerPrefs.GetString(i + "FwHScoreName") + " : " + PlayerPrefs.GetFloat(i + "FwHScore");
         }

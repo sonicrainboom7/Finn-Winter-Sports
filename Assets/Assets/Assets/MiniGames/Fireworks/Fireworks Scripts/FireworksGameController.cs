@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class FireworksGameController : MonoBehaviour {
+    public GameObject player;
     public Button leaveGame;
     private FireworksLeaderBoard leaderBoard;
     private ShootingControls scoreScript;
@@ -22,6 +23,7 @@ public class FireworksGameController : MonoBehaviour {
 	}
     public void EndGame()
     {
+        player.SetActive(false);
         Time.timeScale = 0;
         endCanvas.SetActive(true);
         leaderBoard.AddRecord(PlayerPrefs.GetString("Name", "Anonymous"), (scoreScript.shotCount));  //Add the players name and Score to the leaderboard

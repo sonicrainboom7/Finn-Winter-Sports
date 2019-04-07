@@ -344,6 +344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unPause: {fileID: 2121136010}
   leave: {fileID: 2121136009}
+  player: {fileID: 1313261107}
   pauseCanvas: {fileID: 2121136008}
 --- !u!1 &662009423
 GameObject:

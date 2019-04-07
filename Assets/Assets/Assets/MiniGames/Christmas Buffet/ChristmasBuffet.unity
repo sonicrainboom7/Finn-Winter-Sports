@@ -775,6 +775,34 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1464999464}
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1 &1005703940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1005703941}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1005703941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1005703940}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 296.7083, y: 213.22815, z: -2.9856873}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1051766172 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114328670484115642, guid: 7aceb3e914b7bd84c841454841e4989c,
@@ -1264,6 +1292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unPause: {fileID: 954721119}
   leave: {fileID: 1051766172}
+  player: {fileID: 1005703940}
   pauseCanvas: {fileID: 314206468}
 --- !u!1 &1960011519
 GameObject:

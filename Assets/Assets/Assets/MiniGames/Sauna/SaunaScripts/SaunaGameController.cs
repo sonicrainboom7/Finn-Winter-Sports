@@ -34,57 +34,56 @@ public class SaunaGameController : MonoBehaviour
     }
 
 
-    IEnumerator TripleSteam()
+    IEnumerator TripleSteam()   // adjust these for difficulty
     {
-        rand1 = Random.Range(1, 7);
-        switch (rand1)
-        {
+        int rand = Random.Range(1, 7);
+        switch (rand) { 
             case 1:
                 Instantiate(steamCloud, steamUp.position, transform.rotation);
-                yield return new WaitForSeconds(0.3f);
+                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
                 Instantiate(steamCloud, steamDown.position, transform.rotation);
-                yield return new WaitForSeconds(0.2f);
+                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
                 Instantiate(steamCloud, steamMiddle.position, transform.rotation);
                 break;
 
             case 2:
                 Instantiate(steamCloud, steamMiddle.position, transform.rotation);
-                yield return new WaitForSeconds(0.2f);
+                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
                 Instantiate(steamCloud, steamUp.position, transform.rotation);
-                yield return new WaitForSeconds(0.3f);
+                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
                 Instantiate(steamCloud, steamDown.position, transform.rotation);
                 break;
 
             case 3:
                 Instantiate(steamCloud, steamDown.position, transform.rotation);
-                yield return new WaitForSeconds(0.3f);
+                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
                 Instantiate(steamCloud, steamMiddle.position, transform.rotation);
-                yield return new WaitForSeconds(0.4f);
+                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
                 Instantiate(steamCloud, steamUp.position, transform.rotation);
                 break;
             case 4:
                 Instantiate(steamCloud, steamUp.position, transform.rotation);
-                yield return new WaitForSeconds(0.3f);
+                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
                 Instantiate(steamCloud, steamMiddle.position, transform.rotation);
-                yield return new WaitForSeconds(0.4f);
+                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
                 Instantiate(steamCloud, steamDown.position, transform.rotation);
                 break;
             case 5:
                 Instantiate(steamCloud, steamDown.position, transform.rotation);
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
                 Instantiate(steamCloud, steamUp.position, transform.rotation);
-                yield return new WaitForSeconds(0.2f);
+                yield return new WaitForSeconds(Random.Range(0.8f, 1.8f));
                 Instantiate(steamCloud, steamMiddle.position, transform.rotation);
                 break;
             case 6:
                 Instantiate(steamCloud, steamMiddle.position, transform.rotation);
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
                 Instantiate(steamCloud, steamDown.position, transform.rotation);
-                yield return new WaitForSeconds(0.3f);
+                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
                 Instantiate(steamCloud, steamUp.position, transform.rotation);
                 break;
 
-
+        
 
         }
         
@@ -92,6 +91,7 @@ public class SaunaGameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         saunaHissTimer += Time.deltaTime;
 
         if(saunaHissTimer >= 15f)
@@ -104,113 +104,27 @@ public class SaunaGameController : MonoBehaviour
         {
             time += Time.deltaTime;
             spawnTimer -= Time.deltaTime;
-
-
-            if (spawnTimer <= 0)
+            if (spawnTimer <= 0)   
             {
-                rand1 = Random.Range(1, 4);  //spawn a steam cloud in a random position
-                rand2 = Random.Range(1, 3);
-                switch (rand1)
-                {
-                    case 1:
+                StartCoroutine(TripleSteam());
 
-                        if (time >= 30 && time < 60)
-                        {
-                            Instantiate(steamCloud, steamUp.position, transform.rotation);
-                            switch (rand2)
-                            {
-                                case 1:
-                                    Instantiate(steamCloud, steamMiddle.position, transform.rotation);
-                                    break;
-
-                                case 2:
-                                    Instantiate(steamCloud, steamDown.position, transform.rotation);
-                                    break;
-
-                            }
-                        }
-                        else if (time >= 60)
-                        {
-                            StartCoroutine(TripleSteam());
-                        }
-                        else
-                        {
-                            Instantiate(steamCloud, steamUp.position, transform.rotation);
-                        }
-
-                        break;
-
-
-
-                    case 2:
-
-                        if (time >= 30 && time < 60)
-                        {
-                            Instantiate(steamCloud, steamMiddle.position, transform.rotation);
-                            switch (rand2)
-                            {
-                                case 1:
-                                    Instantiate(steamCloud, steamUp.position, transform.rotation);
-                                    break;
-
-                                case 2:
-                                    Instantiate(steamCloud, steamDown.position, transform.rotation);
-                                    break;
-
-                            }
-                        }
-                        else if (time >= 60)
-                        {
-                            StartCoroutine(TripleSteam());
-                        }
-                        else
-                        {
-                            Instantiate(steamCloud, steamMiddle.position, transform.rotation);
-                        }
-                        break;
-
-                    case 3:
-
-                        if (time >= 30 && time < 60)
-                        {
-                            Instantiate(steamCloud, steamDown.position, transform.rotation);
-                            switch (rand2)
-                            {
-                                case 1:
-                                    Instantiate(steamCloud, steamMiddle.position, transform.rotation);
-                                    break;
-
-                                case 2:
-                                    Instantiate(steamCloud, steamUp.position, transform.rotation);
-                                    break;
-
-                            }
-                        }
-                        else if (time >= 60)
-                        {
-                            StartCoroutine(TripleSteam());
-                        }
-                        else
-                        {
-                            Instantiate(steamCloud, steamDown.position, transform.rotation);
-                        }
-                        break;
-                }
                 startingTimer -= 0.1f;    //make spawning more frequent and faster after each cloud has spawned
                 speedMod += 0.2f;
-                if (startingTimer <= 0.7f)
+                if (startingTimer <= 1)
                 {
-                    startingTimer = 0.7f;
+                    startingTimer = 1;
                 }
                 spawnTimer = startingTimer;
-                if (speedMod >= 12)
+                if (speedMod >= 20)
                 {
-                    speedMod = 12;
+                    speedMod = 20;
                 }
             }
-            timeText.text = "Time : " + (Mathf.Round(time * 100f) / 100f);
         }
+            timeText.text = "Time : " + (Mathf.Round(time * 100f) / 100f);
     }
+    
+
 
     public void GameOver()
     {
