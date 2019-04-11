@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Assets/Assets/MiniGames/Bar Night/BarNight.unity
+- path: Assets/Assets/Assets/MiniGames/Fireworks/FireworksGame.unity
   isLoaded: 1
   isActive: 1

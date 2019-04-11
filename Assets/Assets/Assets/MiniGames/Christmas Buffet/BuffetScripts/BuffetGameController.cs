@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class BuffetGameController : MonoBehaviour {
+    public GameObject lHand, rHand;
     public bool timeRunning;
     public float time;
     public float speedMod;
@@ -40,6 +41,8 @@ public class BuffetGameController : MonoBehaviour {
 
     public void GameOver()
     {
+        lHand.SetActive(false);
+        rHand.SetActive(false);
         for (int i = spawners.Length - 1; i >= 0; i--)
         {
             Destroy(spawners[i].gameObject);

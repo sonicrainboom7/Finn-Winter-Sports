@@ -7,7 +7,9 @@ using UnityEngine.SceneManagement;
 public class SaunaGameController : MonoBehaviour
 {
     public Transform steamUp, steamDown, steamMiddle;
-    public GameObject steamCloud;
+    public GameObject steamCloud1;
+    public GameObject steamCloud2;
+    private GameObject steamCloud;
     public Text timeText;
     private float spawnTimer;
     private float time;
@@ -36,8 +38,24 @@ public class SaunaGameController : MonoBehaviour
 
     IEnumerator TripleSteam()   // adjust these for difficulty
     {
+        int randCloud = Random.Range(1, 3);
+        switch (randCloud)
+        {
+            case 1:
+                steamCloud = steamCloud1;
+                Debug.Log(steamCloud);
+                break;
+               
+
+            case 2:
+                steamCloud = steamCloud2;
+                Debug.Log(steamCloud);
+                break;
+
+        }
         int rand = Random.Range(1, 7);
-        switch (rand) { 
+        switch (rand) {
+            
             case 1:
                 Instantiate(steamCloud, steamUp.position, transform.rotation);
                 yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
