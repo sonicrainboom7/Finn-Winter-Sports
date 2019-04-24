@@ -33,6 +33,7 @@ public class SaunaGameController : MonoBehaviour
         timeRunning = true;
         time = 0;
         spawnTimer = startingTimer;
+        
     }
 
 
@@ -43,13 +44,11 @@ public class SaunaGameController : MonoBehaviour
         {
             case 1:
                 steamCloud = steamCloud1;
-                Debug.Log(steamCloud);
                 break;
                
 
             case 2:
                 steamCloud = steamCloud2;
-                Debug.Log(steamCloud);
                 break;
 
         }
@@ -57,47 +56,53 @@ public class SaunaGameController : MonoBehaviour
         switch (rand) {
             
             case 1:
+                yield return new WaitForSeconds(0.7f);
                 Instantiate(steamCloud, steamUp.position, transform.rotation);
-                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
+                yield return new WaitForSeconds(Random.Range(0.7f, 1.7f));
                 Instantiate(steamCloud, steamDown.position, transform.rotation);
-                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
+                yield return new WaitForSeconds(Random.Range(0.7f, 1.7f));
                 Instantiate(steamCloud, steamMiddle.position, transform.rotation);
                 break;
 
             case 2:
+                yield return new WaitForSeconds(0.7f);
                 Instantiate(steamCloud, steamMiddle.position, transform.rotation);
-                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
+                yield return new WaitForSeconds(Random.Range(0.7f, 1.7f));
                 Instantiate(steamCloud, steamUp.position, transform.rotation);
-                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
+                yield return new WaitForSeconds(Random.Range(0.7f, 1.7f));
                 Instantiate(steamCloud, steamDown.position, transform.rotation);
                 break;
 
             case 3:
+                yield return new WaitForSeconds(0.7f);
                 Instantiate(steamCloud, steamDown.position, transform.rotation);
-                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
+                yield return new WaitForSeconds(Random.Range(0.7f, 1.7f));
                 Instantiate(steamCloud, steamMiddle.position, transform.rotation);
-                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
+                yield return new WaitForSeconds(Random.Range(0.7f, 1.7f));
                 Instantiate(steamCloud, steamUp.position, transform.rotation);
                 break;
             case 4:
+                yield return new WaitForSeconds(0.7f);
                 Instantiate(steamCloud, steamUp.position, transform.rotation);
-                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
+                yield return new WaitForSeconds(Random.Range(0.7f, 1.7f));
                 Instantiate(steamCloud, steamMiddle.position, transform.rotation);
-                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
+                yield return new WaitForSeconds(Random.Range(0.7f, 1.7f));
                 Instantiate(steamCloud, steamDown.position, transform.rotation);
                 break;
             case 5:
+                yield return new WaitForSeconds(0.7f);
                 Instantiate(steamCloud, steamDown.position, transform.rotation);
-                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
+                yield return new WaitForSeconds(Random.Range(0.7f, 1.7f));
                 Instantiate(steamCloud, steamUp.position, transform.rotation);
-                yield return new WaitForSeconds(Random.Range(0.8f, 1.8f));
+                yield return new WaitForSeconds(Random.Range(0.7f, 1.7f));
                 Instantiate(steamCloud, steamMiddle.position, transform.rotation);
                 break;
             case 6:
+                yield return new WaitForSeconds(0.7f);
                 Instantiate(steamCloud, steamMiddle.position, transform.rotation);
-                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
+                yield return new WaitForSeconds(Random.Range(0.7f, 1.7f));
                 Instantiate(steamCloud, steamDown.position, transform.rotation);
-                yield return new WaitForSeconds(Random.Range(0.8f, 1.5f));
+                yield return new WaitForSeconds(Random.Range(0.7f, 1.7f));
                 Instantiate(steamCloud, steamUp.position, transform.rotation);
                 break;
 
@@ -128,14 +133,14 @@ public class SaunaGameController : MonoBehaviour
 
                 startingTimer -= 0.1f;    //make spawning more frequent and faster after each cloud has spawned
                 speedMod += 0.2f;
-                if (startingTimer <= 1)
+                if (startingTimer <= 1.4f)
                 {
-                    startingTimer = 1;
+                    startingTimer = 1.4f;
                 }
                 spawnTimer = startingTimer;
-                if (speedMod >= 20)
+                if (speedMod >= 50)
                 {
-                    speedMod = 20;
+                    speedMod = 50;
                 }
             }
         }
