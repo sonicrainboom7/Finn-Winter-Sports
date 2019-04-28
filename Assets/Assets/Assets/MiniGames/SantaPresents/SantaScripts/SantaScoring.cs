@@ -15,8 +15,8 @@ public class SantaScoring : MonoBehaviour {
 	}
     private void OnCollisionEnter(Collision collision)
     {
-        Renderer rend = collision.gameObject.GetComponent<Renderer>();
-        rend.material.SetColor("_Color",Color.red);
+        //Renderer rend = collision.gameObject.GetComponent<Renderer>();
+        //rend.material.SetColor("_Color",Color.red);
         controllerScript.ScoreIncrease();
         Destroy(collision.gameObject.GetComponent<BoxCollider>());
         Destroy(gameObject);

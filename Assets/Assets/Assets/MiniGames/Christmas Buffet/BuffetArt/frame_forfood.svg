@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30"
+   height="30"
+   viewBox="0 0 7.9374998 7.9375002"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="frame_forfood.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="-3.4262667"
+     inkscape:cy="11.892131"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="425"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       empspacing="1" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-289.06249)">
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:0.84848489;stroke:none;stroke-width:0.27889949;stroke-opacity:1"
+       id="rect817"
+       width="5.2916665"
+       height="0.52918249"
+       x="1.5875001"
+       y="289.59164" />
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:0.84848489;stroke:none;stroke-width:0.27889949;stroke-opacity:1"
+       id="rect817-9"
+       width="5.2916665"
+       height="0.52918249"
+       x="1.5875"
+       y="295.41248" />
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:0.84848489;stroke:none;stroke-width:0.27889705;stroke-opacity:1"
+       id="rect817-9-9"
+       width="0.52916664"
+       height="5.2917318"
+       x="1.0583333"
+       y="290.12082" />
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:0.84848489;stroke:none;stroke-width:0.27889463;stroke-opacity:1"
+       id="rect817-9-9-9"
+       width="0.52916664"
+       height="5.2916408"
+       x="6.8791666"
+       y="290.12085" />
+    <rect
+       style="opacity:1;fill:#676767;fill-opacity:0.84848489;stroke:none;stroke-width:0.19721235;stroke-opacity:1"
+       id="rect817-6"
+       width="5.2916665"
+       height="0.26459289"
+       x="1.5875"
+       y="289.59164" />
+    <rect
+       style="opacity:1;fill:#676767;fill-opacity:0.84848489;stroke:none;stroke-width:0.19720858;stroke-opacity:1"
+       id="rect817-6-6"
+       width="0.26458332"
+       height="5.2916536"
+       x="7.1437502"
+       y="290.12082" />
+    <rect
+       style="opacity:1;fill:#676767;fill-opacity:0.84848489;stroke:none;stroke-width:0.1972086;stroke-opacity:1"
+       id="rect817-6-6-5"
+       width="0.26458332"
+       height="5.2916536"
+       x="1.0583333"
+       y="290.12082" />
+    <rect
+       style="opacity:1;fill:#676767;fill-opacity:0.84848489;stroke:none;stroke-width:0.19721237;stroke-opacity:1"
+       id="rect817-6-2"
+       width="5.2916665"
+       height="0.26459289"
+       x="1.5875"
+       y="295.67706" />
+  </g>
+</svg>

@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class SantaControls : MonoBehaviour {
     private float speed;
-    public GameObject present;
+    public GameObject present1, present2, present3, present4; //Art for the present
+    private GameObject present;
     public int presentAmount;
     private float time;
     public Text presentAmountText;
@@ -24,7 +25,28 @@ public class SantaControls : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.S) && presentAmount > 0)
         {
-            Instantiate(present, transform.position - (transform.up), transform.rotation);
+            int rand = Random.Range(1, 4);  //Select art for present randomly
+            switch (rand)
+            {
+                case 1:
+                     present = present1;
+                    break;
+
+                case 2:
+                     present = present2;
+                    break;
+
+                case 3:
+                     present = present3;
+                    break;
+
+                case 4:
+                     present = present4;
+                    break;
+            }
+
+            GameObject instObj = Instantiate(present, transform.position - (transform.up * 1.5f), transform.rotation);
+            instObj.GetComponent<Rigidbody>().AddForce(-transform.up * 500);
             presentAmount--;
             presentAmountText.text = "Presents : " + presentAmount + " / 30";
         }
@@ -36,6 +58,7 @@ public class SantaControls : MonoBehaviour {
         if (other.gameObject.tag == "End")
         {
             controllerScript.GameOver();
+            Destroy(gameObject);
         }
     }
 }

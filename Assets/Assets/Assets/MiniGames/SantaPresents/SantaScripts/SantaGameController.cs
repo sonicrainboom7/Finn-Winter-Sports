@@ -9,12 +9,14 @@ public class SantaGameController : MonoBehaviour {
     public GameObject gameEnd;
     private SantaLeaderBoard leaderBoard;
     public Button leaveGame;
+    public Text scoreText;
 	// Use this for initialization
 	void Start () {
         leaderBoard = GameObject.Find("GameController").GetComponent<SantaLeaderBoard>();
         leaveGame.onClick.AddListener(BackToMenu);
         score = 0;
-	}
+        scoreText.text = "Score : " + score;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -30,6 +32,7 @@ public class SantaGameController : MonoBehaviour {
     public void ScoreIncrease()
     {
         score += 1;
+        scoreText.text = "Score : " + score;
     }
     void BackToMenu()
     {

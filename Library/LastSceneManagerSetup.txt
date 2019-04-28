@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Assets/Assets/MiniGames/SantaPresents/SantaGame.unity
+- path: Assets/Assets/Assets/MiniGames/Christmas Buffet/ChristmasBuffet.unity
   isLoaded: 1
   isActive: 1

@@ -8,7 +8,8 @@ public class FoodSpawner : MonoBehaviour
     public float maxWait;
     private bool isSpawning;
     private BuffetGameController controllerScript;
-    public GameObject food;
+    public GameObject[] foodList;
+    private GameObject food;
 
     void Awake()
     {
@@ -42,6 +43,23 @@ public class FoodSpawner : MonoBehaviour
 
     void SpawnObject()
     {
+        int rand = Random.Range(0, 0);  //Select art for present randomly
+        food = foodList[rand];
+        switch (gameObject.name)
+        {
+
+            case "A-Spawner":   //Change tag of food to the appropriate one based on the spawner
+                food.gameObject.tag = "A";
+                break;
+
+            case "S-Spawner":
+                food.gameObject.tag = "S";
+                break;
+
+            case "D-Spawner":
+                food.gameObject.tag = "D";
+                break;
+        }
         Instantiate(food, transform.position, transform.rotation);
         isSpawning = false;
     }

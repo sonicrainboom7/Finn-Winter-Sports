@@ -64,7 +64,7 @@ public class ButtonController : MonoBehaviour {
     }
     private void OnTriggerStay(Collider other)
     {
-        
+       
         switch (other.gameObject.tag)
         {
             case "A":
