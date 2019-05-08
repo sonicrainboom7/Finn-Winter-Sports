@@ -14,9 +14,9 @@ public class MainMenuController : MonoBehaviour
     public Text nameText;
     public InputField playerName;
     public Button nameButton, leaderBoardsButton, backToMenuButton, backFromScores, howToPlayButton, backFromHowToPlayButton, backFromGuides;
-    public Button saunaButton, barNightButton, buffetButton, santaButton, fireworksButton;    //Add more buttons here for more games
-    public Button saunaLB, barNightLB, buffetLB, santaLB, fireworksLB;    //Add more buttons here for more games
-    public Button saunaHtP, barNightHtP, buffetHtP, santaHtP, fireworksHtP; // Add more buttons here for more games
+    public Button saunaButton, barNightButton, buffetButton, santaButton, fireworksButton, iceFishingButton;    //Add more buttons here for more games
+    public Button saunaLB, barNightLB, buffetLB, santaLB, fireworksLB, iceFishingLB;    //Add more buttons here for more games
+    public Button saunaHtP, barNightHtP, buffetHtP, santaHtP, fireworksHtP, iceFishingHtP; // Add more buttons here for more games
 
     void Start()
     {
@@ -36,18 +36,21 @@ public class MainMenuController : MonoBehaviour
         buffetButton.onClick.AddListener(delegate { StartGame(3); });
         santaButton.onClick.AddListener(delegate { StartGame(4); });
         fireworksButton.onClick.AddListener(delegate { StartGame(5); });
+        iceFishingButton.onClick.AddListener(delegate { StartGame(6); });
 
         saunaLB.onClick.AddListener(delegate { GetHighScores(1); });  //defines which scores will be shown on the leaderboard
         barNightLB.onClick.AddListener(delegate { GetHighScores(2); });
         buffetLB.onClick.AddListener(delegate { GetHighScores(3); });
         santaLB.onClick.AddListener(delegate { GetHighScores(4); });
         fireworksLB.onClick.AddListener(delegate { GetHighScores(5); });
+        iceFishingLB.onClick.AddListener(delegate { GetHighScores(6); });
 
         saunaHtP.onClick.AddListener(delegate { GetHowToPlay(1); });  //defines which guide will be shown
         barNightHtP.onClick.AddListener(delegate { GetHowToPlay(2); });
         buffetHtP.onClick.AddListener(delegate { GetHowToPlay(3); });
         santaHtP.onClick.AddListener(delegate { GetHowToPlay(4); });
-        fireworksHtP.onClick.AddListener(delegate { GetHowToPlay(5); }); ;
+        fireworksHtP.onClick.AddListener(delegate { GetHowToPlay(5); }); 
+        iceFishingHtP.onClick.AddListener(delegate { GetHowToPlay(6); });
     }
 
     // Update is called once per frame
@@ -135,6 +138,13 @@ public class MainMenuController : MonoBehaviour
                     namesText[i].text = PlayerPrefs.GetString(i + "FwHScoreName") + " : " + PlayerPrefs.GetFloat(i + "FwHScore");
                 }
                 break;
+            case 6:
+                gameName.text = "Ice Fishing";
+                for (int i = 0; i < 5; i++)
+                {
+                    namesText[i].text = PlayerPrefs.GetString(i + "IFHScoreName") + " : " + PlayerPrefs.GetFloat(i + "IFHScore");
+                }
+                break;
         }
 
 
@@ -168,6 +178,10 @@ public class MainMenuController : MonoBehaviour
             case 5:
                 howToPlayGameName.text = "How To Play " + "Fireworks";
                 howToPlayText.text = "Aim with the mouse and hold Left Click to gather power for a shot and try to hit the target";
+                break;
+            case 6:
+                howToPlayGameName.text = "How To Play " + "Ice Fishing";
+                howToPlayText.text = "Tap spacebar to ascend your fishing hook. Catch fish by hitting their mouth with your hook and then reel them up!";
                 break;
         }
     }

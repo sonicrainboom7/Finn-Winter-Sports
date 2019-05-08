@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Assets/Assets/MiniGames/Christmas Buffet/ChristmasBuffet.unity
+- path: Assets/Assets/Assets/MiniGames/Ice Fishing v2/Ice Fishing/IceFishing.unity
   isLoaded: 1
   isActive: 1

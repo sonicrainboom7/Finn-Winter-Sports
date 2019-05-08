@@ -296,10 +296,6 @@
       <Project>{8FDCBFF9-688D-76AA-EE12-1872792FF616}</Project>
       <Name>Unity.InternalAPIEditorBridge.003</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.VectorGraphics.Editor.csproj">
-      <Project>{BE01F43C-726A-8B9B-DEC1-E5C4E3536C5C}</Project>
-      <Name>Unity.VectorGraphics.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.StandardEvents.csproj">
       <Project>{6800202F-4402-D405-F8CB-03DC7BD78B92}</Project>
       <Name>UnityEditor.StandardEvents</Name>
@@ -311,6 +307,10 @@
     <ProjectReference Include="Unity.PackageManagerUI.Editor.csproj">
       <Project>{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}</Project>
       <Name>Unity.PackageManagerUI.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VectorGraphics.Editor.csproj">
+      <Project>{BE01F43C-726A-8B9B-DEC1-E5C4E3536C5C}</Project>
+      <Name>Unity.VectorGraphics.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{07A21C90-D344-AE1A-8456-9910C203B41A}</Project>
@@ -336,10 +336,12 @@
     <Compile Include="Assets\Assets\Assets\MiniGames\Fireworks\Fireworks Scripts\FireworksGameController.cs" />
     <Compile Include="Assets\Assets\Assets\MiniGames\Fireworks\Fireworks Scripts\FireworksLeaderBoard.cs" />
     <Compile Include="Assets\Assets\Assets\MiniGames\Fireworks\Fireworks Scripts\ShootingControls.cs" />
-    <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing\IceScripts\Destroy.cs" />
-    <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing\IceScripts\Fish.cs" />
-    <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing\IceScripts\Hook.cs" />
-    <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing\IceScripts\Spawner.cs" />
+    <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing v2\Ice Fishing\IceScripts\Destroy.cs" />
+    <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing v2\Ice Fishing\IceScripts\Fish.cs" />
+    <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing v2\Ice Fishing\IceScripts\Hook.cs" />
+    <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing v2\Ice Fishing\IceScripts\IceFishingGameController.cs" />
+    <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing v2\Ice Fishing\IceScripts\IceFishingLeaderboard.cs" />
+    <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing v2\Ice Fishing\IceScripts\Spawner.cs" />
     <Compile Include="Assets\Assets\Assets\MiniGames\SantaPresents\SantaScripts\CameraFollow.cs" />
     <Compile Include="Assets\Assets\Assets\MiniGames\SantaPresents\SantaScripts\SantaControls.cs" />
     <Compile Include="Assets\Assets\Assets\MiniGames\SantaPresents\SantaScripts\SantaGameController.cs" />
