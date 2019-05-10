@@ -552,6 +552,22 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 3c0c0e0d081bce1449254df4bc42ebb9, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 3c0c0e0d081bce1449254df4bc42ebb9, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 3c0c0e0d081bce1449254df4bc42ebb9, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 3c0c0e0d081bce1449254df4bc42ebb9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c0c0e0d081bce1449254df4bc42ebb9, type: 3}
   m_IsPrefabAsset: 0
@@ -1251,6 +1267,7 @@ MonoBehaviour:
   beerSource: {fileID: 1253251033}
   obstacleHit: {fileID: 8300000, guid: aa9455009a301074688108ea8d37ac27, type: 3}
   obstacleSource: {fileID: 1633966803}
+  moveSmoother: 0
 --- !u!54 &1313261113
 Rigidbody:
   m_ObjectHideFlags: 0

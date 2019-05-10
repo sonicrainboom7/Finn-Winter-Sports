@@ -401,8 +401,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e901a982e7a5f40a41980c5168809a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minWait: 2.5
-  maxWait: 7.5
+  minWait: 2
+  maxWait: 5
   foodList:
   - {fileID: 1422226889684984, guid: f75f5edd2bf46a24eb85301b7175ce0e, type: 2}
   - {fileID: 1797818449109134, guid: 3585164b45aa00c4d93a5214ae2750c8, type: 2}
@@ -1124,8 +1124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e901a982e7a5f40a41980c5168809a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minWait: 2.5
-  maxWait: 7.5
+  minWait: 2
+  maxWait: 5
   foodList:
   - {fileID: 1422226889684984, guid: f75f5edd2bf46a24eb85301b7175ce0e, type: 2}
   - {fileID: 1797818449109134, guid: 3585164b45aa00c4d93a5214ae2750c8, type: 2}
@@ -1589,8 +1589,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e901a982e7a5f40a41980c5168809a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minWait: 2.5
-  maxWait: 7.5
+  minWait: 2
+  maxWait: 5
   foodList:
   - {fileID: 1422226889684984, guid: f75f5edd2bf46a24eb85301b7175ce0e, type: 2}
   - {fileID: 1797818449109134, guid: 3585164b45aa00c4d93a5214ae2750c8, type: 2}

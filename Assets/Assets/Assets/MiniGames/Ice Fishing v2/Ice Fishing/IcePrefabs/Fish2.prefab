@@ -272,7 +272,7 @@ MonoBehaviour:
   minSpeed: 1.6
   maxSpeed: 2.4
   score: 2
-  right: 1
+  right: 0
   hooked: 0
 --- !u!212 &212770038320760572
 SpriteRenderer:
