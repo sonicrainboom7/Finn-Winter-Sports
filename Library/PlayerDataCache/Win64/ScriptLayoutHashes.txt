@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/Omistaja/Documents/Finn-Winter-Sports/Builds/Version 0.3/Finn_Winter_Sports.exe
+C:/Users/Tomi Veijalainen/Documents/FinnWinterSports/Builds/Version 0.4/Finn_Winter_Sports.exe
 SceneListBegin?
 Assets/Assets/Assets/MainMenu/MainMenu.unity
 Assets/Assets/Assets/MiniGames/Sauna/SaunaGame.unity
@@ -172,7 +172,7 @@ b0ce266ef9fd285d639c281896fe0a0e Assembly-CSharp.dll:.FoodSpawner
 72a8523b432c0a5317826b7a9e0a0e79 Unity.TextMeshPro.dll:TMPro.PackageResourceImporterWindow
 e53cc67d84060d628c7f03fc725766d8 Unity.TextMeshPro.dll:TMPro.TMP_FontAsset
 392c5b921098bd4c139d9146d0efa6d7 Unity.TextMeshPro.dll:TMPro.TMP_Settings
-662129c7c2da64b0f20d00b5edcc3498 Assembly-CSharp.dll:.MainMenuController
+f6478c2b0a03c423939f69f535d1597f Assembly-CSharp.dll:.MainMenuController
 486cd95c82d8305219c352c06b776e1f UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 e033f131358cea5a0eabf9561e781deb UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 9d863b523b577f5c3d915351a74cd338 UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
@@ -181,7 +181,7 @@ cdb2719e0379a1663d02308cd59ef34a Assembly-CSharp.dll:.BuffetLeaderBoard
 70f7dc248db3379548a88e8d4fa049f8 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 28a95668dd28649297d595834fe8417e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 28a95668dd28649297d595834fe8417e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
-c93b883ddaa9a15a7413e7a3524a8ef0 Assembly-CSharp.dll:.BarNightPlayerMovement
+c7a3f9f2d8f6016c8ff079d91e364597 Assembly-CSharp.dll:.BarNightPlayerMovement
 1a90b221dc803408fbafa883c12bcab4 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioListenerExtension
 70f7dc248db3379548a88e8d4fa049f8 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 28a95668dd28649297d595834fe8417e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
@@ -203,6 +203,6 @@ e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 dc99428b1d7747017548e60de09266a2 Assembly-CSharp.dll:.FireworksGameController
 abcd4d79e6ae679b1b84f3d966a11b6a Assembly-CSharp.dll:.ShootingControls
 751e04c721a16947e5a9600d7e810c44 Assembly-CSharp.dll:.IceFishingGameController
-37792ad7147cb895b433b640f3c00b94 Assembly-CSharp.dll:.FireworksParticle
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.DestroySelf
 3a1055cc294b03bc3808e6bae62bf31c Assembly-CSharp.dll:.Line
+37792ad7147cb895b433b640f3c00b94 Assembly-CSharp.dll:.FireworksParticle
