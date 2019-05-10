@@ -236,6 +236,7 @@ MonoBehaviour:
   - {fileID: 1968133790}
   - {fileID: 1182630591}
   - {fileID: 1059260600}
+  yourScoreText: {fileID: 893120917}
 --- !u!82 &403231758
 AudioSource:
   m_ObjectHideFlags: 0
@@ -629,6 +630,12 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 885045801}
   m_CullTransparentMesh: 0
+--- !u!114 &893120917 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114426368652304258, guid: e15b86e55716fce479308b7cd7268548,
+    type: 2}
+  m_PrefabInternal: {fileID: 732614602}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &989646140
 GameObject:
   m_ObjectHideFlags: 0

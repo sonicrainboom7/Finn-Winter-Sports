@@ -5,12 +5,14 @@ using UnityEngine.UI;
 
 public class BarNightLeaderBoard : MonoBehaviour
 {
+    private float yourScore;
     private float newScore;
     private string newName;
     private float oldScore;
     private string oldName;
     private string[] names;
     public Text[] namesText;
+    public Text yourScoreText;
     private void Awake()
     {
 
@@ -18,6 +20,7 @@ public class BarNightLeaderBoard : MonoBehaviour
 
     public void AddRecord(string name, float score)
     {
+        yourScore = score;
         newScore = score;
         newName = name;
         for (int i = 0; i < 5; i++)
@@ -47,6 +50,7 @@ public class BarNightLeaderBoard : MonoBehaviour
     }
     public void GetHighScores()
     {
+        yourScoreText.text = "Your score : " + yourScore;
         for (int i = 0; i < 5; i++)
         {
             namesText[i].text = PlayerPrefs.GetString(i + "BarNightHScoreName") + " : " + PlayerPrefs.GetFloat(i + "BarNightHScore");

@@ -484,6 +484,7 @@ MonoBehaviour:
   - {fileID: 980052158}
   - {fileID: 1991330431}
   - {fileID: 1542049869}
+  yourScoreText: {fileID: 308365421}
 --- !u!114 &223128952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -555,6 +556,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 727cfa8b17bd93e44a724e222d03cb77, type: 3}
   m_IsPrefabAsset: 0
+--- !u!114 &308365421 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114426368652304258, guid: e15b86e55716fce479308b7cd7268548,
+    type: 2}
+  m_PrefabInternal: {fileID: 713950990}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!114 &335607777 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114212904726674076, guid: e15b86e55716fce479308b7cd7268548,

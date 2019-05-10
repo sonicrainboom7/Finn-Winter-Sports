@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class SaunaLeaderBoard : MonoBehaviour {
     private float newScore;
     private string newName;
+    private float yourScore;
     private float oldScore;
     private string oldName;
     private string[] names;
     public Text[] namesText;
+    public Text yourScoreText;
     private void Awake()
     {
         
@@ -17,6 +19,7 @@ public class SaunaLeaderBoard : MonoBehaviour {
 
     public void AddRecord(string name, float score)
     {
+        yourScore = score;
         newScore = score;
         newName = name;
         for (int i = 0; i < 5; i++)
@@ -46,6 +49,7 @@ public class SaunaLeaderBoard : MonoBehaviour {
     }
     public void GetHighScores()
     {
+        yourScoreText.text = "Your score : " + yourScore;
         for (int i = 0; i < 5; i++)
         {
             namesText[i].text = PlayerPrefs.GetString(i + "SaunaHScoreName") + " : " + PlayerPrefs.GetFloat(i + "SaunaHScore");

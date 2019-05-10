@@ -4,12 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class IceFishingLeaderboard : MonoBehaviour {
+    private float yourScore;
     private float newScore;
     private string newName;
     private float oldScore;
     private string oldName;
     private string[] names;
     public Text[] namesText;
+    public Text yourScoreText;
     private void Awake()
     {
 
@@ -17,6 +19,7 @@ public class IceFishingLeaderboard : MonoBehaviour {
 
     public void AddRecord(string name, float score)
     {
+        yourScore = score;
         newScore = score;
         newName = name;
         for (int i = 0; i < 5; i++)
@@ -26,7 +29,7 @@ public class IceFishingLeaderboard : MonoBehaviour {
                
                 if (PlayerPrefs.GetFloat(i + "IFHScore") < newScore)
                 {
-                    Debug.Log((PlayerPrefs.GetFloat(i + "IFHScore")));
+                    
                     // new score is higher than the stored score
                     oldScore = PlayerPrefs.GetFloat(i + "IFHScore");
                     oldName = PlayerPrefs.GetString(i + "IFHScoreName");
@@ -34,7 +37,7 @@ public class IceFishingLeaderboard : MonoBehaviour {
                     PlayerPrefs.SetString(i + "IFHScoreName", newName);
                     newScore = oldScore;
                     newName = oldName;
-                    Debug.Log(newScore);
+                   
                 }
             }
             else
@@ -49,6 +52,7 @@ public class IceFishingLeaderboard : MonoBehaviour {
     }
     public void GetHighScores()
     {
+        yourScoreText.text = "Your score : " + yourScore;
         for (int i = 0; i < 5; i++)
         {
             namesText[i].text = PlayerPrefs.GetString(i + "IFHScoreName") + " : " + PlayerPrefs.GetFloat(i + "IFHScore");

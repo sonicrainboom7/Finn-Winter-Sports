@@ -728,6 +728,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 629792898}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &629792906 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114426368652304258, guid: e15b86e55716fce479308b7cd7268548,
+    type: 2}
+  m_PrefabInternal: {fileID: 629792898}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &653247256 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1380478181212590, guid: 7aceb3e914b7bd84c841454841e4989c,
@@ -1233,6 +1239,7 @@ MonoBehaviour:
   - {fileID: 629792903}
   - {fileID: 629792902}
   - {fileID: 629792901}
+  yourScoreText: {fileID: 629792906}
 --- !u!1001 &1515862909
 Prefab:
   m_ObjectHideFlags: 0
