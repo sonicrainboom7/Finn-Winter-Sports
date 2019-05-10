@@ -29,7 +29,7 @@ public class BuffetGameController : MonoBehaviour {
         if (timeRunning == true)
         {
             time += Time.deltaTime;
-            speedMod = (time / 60) + 1;
+            speedMod = (time / 45) + 2;
             timer.text = "Time : " + (Mathf.Round(time * 100f) / 100f);
             lives.text = "Lives : " + hp;
             if(hp <= 0)

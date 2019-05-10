@@ -405,6 +405,9 @@ MonoBehaviour:
   maxWait: 7.5
   foodList:
   - {fileID: 1422226889684984, guid: f75f5edd2bf46a24eb85301b7175ce0e, type: 2}
+  - {fileID: 1797818449109134, guid: 3585164b45aa00c4d93a5214ae2750c8, type: 2}
+  - {fileID: 1625891366847024, guid: 6b198b83fdd0bff46b906ae93d1fe53d, type: 2}
+  - {fileID: 1947726637734574, guid: 4aa081c209a9491429ee428c86b0191d, type: 2}
 --- !u!4 &312110626
 Transform:
   m_ObjectHideFlags: 0
@@ -1125,6 +1128,9 @@ MonoBehaviour:
   maxWait: 7.5
   foodList:
   - {fileID: 1422226889684984, guid: f75f5edd2bf46a24eb85301b7175ce0e, type: 2}
+  - {fileID: 1797818449109134, guid: 3585164b45aa00c4d93a5214ae2750c8, type: 2}
+  - {fileID: 1625891366847024, guid: 6b198b83fdd0bff46b906ae93d1fe53d, type: 2}
+  - {fileID: 1947726637734574, guid: 4aa081c209a9491429ee428c86b0191d, type: 2}
 --- !u!4 &1368824219
 Transform:
   m_ObjectHideFlags: 0
@@ -1580,6 +1586,9 @@ MonoBehaviour:
   maxWait: 7.5
   foodList:
   - {fileID: 1422226889684984, guid: f75f5edd2bf46a24eb85301b7175ce0e, type: 2}
+  - {fileID: 1797818449109134, guid: 3585164b45aa00c4d93a5214ae2750c8, type: 2}
+  - {fileID: 1625891366847024, guid: 6b198b83fdd0bff46b906ae93d1fe53d, type: 2}
+  - {fileID: 1947726637734574, guid: 4aa081c209a9491429ee428c86b0191d, type: 2}
 --- !u!4 &1960011521
 Transform:
   m_ObjectHideFlags: 0

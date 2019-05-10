@@ -13,6 +13,7 @@ public class ShootingControls : MonoBehaviour {
     public float maxPower;
     public float shotCount;
     private float windSpeed;
+    public AudioSource launchSound, bangSound;
     Vector3 dir;
 	// Use this for initialization
 	void Start () {
@@ -48,6 +49,7 @@ public class ShootingControls : MonoBehaviour {
         }
         if (Input.GetMouseButtonUp(0))
         {
+            launchSound.Play();
             Firefireworks();
             windSpeed = Mathf.Round(Random.Range(-10f, 10f)); // change the power of wind after every shot
             power = 1;
@@ -69,6 +71,7 @@ public class ShootingControls : MonoBehaviour {
 
         }
         Destroy(instFirework, 5f);
+        bangSound.PlayDelayed(5f);
         //Debug.Log((-dir * (power + windSpeed)));
     }
 }

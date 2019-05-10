@@ -43,7 +43,7 @@ public class FoodSpawner : MonoBehaviour
 
     void SpawnObject()
     {
-        int rand = Random.Range(0, 0);  //Select art for present randomly
+        int rand = Random.Range(0, 4);  //Select art for present randomly
         food = foodList[rand];
         switch (gameObject.name)
         {

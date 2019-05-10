@@ -2,7 +2,7 @@
 -target:library
 -nowarn:0169
 -langversion:4
--out:Temp/Unity.VectorGraphics.dll
+-out:Temp/Assembly-CSharp.dll
 -nostdlib
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.7f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.7f1\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
@@ -66,31 +66,21 @@
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.7f1\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.7f1\Editor\Data\Managed/UnityEditor.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.7f1\Editor\Data\Managed/Unity.Locator.dll"
+-r:Library/ScriptAssemblies/Unity.VectorGraphics.dll
+-r:Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.003.dll
+-r:Library/ScriptAssemblies/UnityEditor.StandardEvents.dll
+-r:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+-r:Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
+-r:Library/ScriptAssemblies/Unity.VectorGraphics.Editor.dll
+-r:Library/ScriptAssemblies/Unity.TextMeshPro.dll
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
--r:"C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
--r:"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll"
 -r:"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll"
--r:"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll"
--r:"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll"
 -r:"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll"
--r:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.7f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\mscorlib.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.7f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.dll"
 -r:"C:\Program Files\Unity\Hub\Editor\2018.2.7f1\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Core.dll"
@@ -197,27 +187,37 @@
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
 -define:ENABLE_VSTU
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/AssemblyInfo.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/External/Clipper/C#/clipper_library/clipper.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/External/LibTessDotNet/Dict.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/External/LibTessDotNet/Geom.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/External/LibTessDotNet/Mesh.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/External/LibTessDotNet/MeshUtils.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/External/LibTessDotNet/PriorityHeap.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/External/LibTessDotNet/PriorityQueue.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/External/LibTessDotNet/Sweep.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/External/LibTessDotNet/Tess.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/Matrix2D.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/SVGImage.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/SVGParser.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/SVGStyleSheet.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/VectorClip.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/VectorEllipse.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/VectorRasterization.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/VectorRectangle.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/VectorScene.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/VectorSceneTessellation.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/VectorSprite.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/VectorTessellation.cs"
-"C:/Users/Tomi Veijalainen/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.vectorgraphics@1.0.0-preview.23/Runtime/VectorUtils.cs"
+"Assets/Assets/Assets/All purpose scripts/Pausehandler.cs"
+Assets/Assets/Assets/MainMenu/ButtonHandler.cs
+Assets/Assets/Assets/MainMenu/MainMenuController.cs
+"Assets/Assets/Assets/MiniGames/Bar Night/BarNightScripts/BarNightGameController.cs"
+"Assets/Assets/Assets/MiniGames/Bar Night/BarNightScripts/BarNightLeaderBoard.cs"
+"Assets/Assets/Assets/MiniGames/Bar Night/BarNightScripts/BarNightPlayerMovement.cs"
+"Assets/Assets/Assets/MiniGames/Bar Night/BarNightScripts/ItemMover.cs"
+"Assets/Assets/Assets/MiniGames/Bar Night/BarNightScripts/ItemSpawner.cs"
+"Assets/Assets/Assets/MiniGames/Christmas Buffet/BuffetScripts/BuffetGameController.cs"
+"Assets/Assets/Assets/MiniGames/Christmas Buffet/BuffetScripts/BuffetLeaderBoard.cs"
+"Assets/Assets/Assets/MiniGames/Christmas Buffet/BuffetScripts/ButtonController.cs"
+"Assets/Assets/Assets/MiniGames/Christmas Buffet/BuffetScripts/FoodMover.cs"
+"Assets/Assets/Assets/MiniGames/Christmas Buffet/BuffetScripts/FoodSpawner.cs"
+"Assets/Assets/Assets/MiniGames/Fireworks/Fireworks Scripts/AimingControls.cs"
+"Assets/Assets/Assets/MiniGames/Fireworks/Fireworks Scripts/FireworkScript.cs"
+"Assets/Assets/Assets/MiniGames/Fireworks/Fireworks Scripts/FireworksGameController.cs"
+"Assets/Assets/Assets/MiniGames/Fireworks/Fireworks Scripts/FireworksLeaderBoard.cs"
+"Assets/Assets/Assets/MiniGames/Fireworks/Fireworks Scripts/ShootingControls.cs"
+"Assets/Assets/Assets/MiniGames/Ice Fishing v2/Ice Fishing/IceScripts/Destroy.cs"
+"Assets/Assets/Assets/MiniGames/Ice Fishing v2/Ice Fishing/IceScripts/Fish.cs"
+"Assets/Assets/Assets/MiniGames/Ice Fishing v2/Ice Fishing/IceScripts/Hook.cs"
+"Assets/Assets/Assets/MiniGames/Ice Fishing v2/Ice Fishing/IceScripts/IceFishingGameController.cs"
+"Assets/Assets/Assets/MiniGames/Ice Fishing v2/Ice Fishing/IceScripts/IceFishingLeaderboard.cs"
+"Assets/Assets/Assets/MiniGames/Ice Fishing v2/Ice Fishing/IceScripts/Spawner.cs"
+Assets/Assets/Assets/MiniGames/SantaPresents/SantaScripts/CameraFollow.cs
+Assets/Assets/Assets/MiniGames/SantaPresents/SantaScripts/SantaControls.cs
+Assets/Assets/Assets/MiniGames/SantaPresents/SantaScripts/SantaGameController.cs
+Assets/Assets/Assets/MiniGames/SantaPresents/SantaScripts/SantaLeaderBoard.cs
+Assets/Assets/Assets/MiniGames/SantaPresents/SantaScripts/SantaScoring.cs
+Assets/Assets/Assets/MiniGames/Sauna/SaunaScripts/SaunaGameController.cs
+Assets/Assets/Assets/MiniGames/Sauna/SaunaScripts/SaunaLeaderBoard.cs
+Assets/Assets/Assets/MiniGames/Sauna/SaunaScripts/SaunaPlayer.cs
+Assets/Assets/Assets/MiniGames/Sauna/SaunaScripts/SaunaSteamMover.cs
 -lib:"C:\Program Files\Unity\Hub\Editor\2018.2.7f1\Editor\Data\MonoBleedingEdge\lib\mono\unity"

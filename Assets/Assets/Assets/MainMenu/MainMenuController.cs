@@ -160,27 +160,27 @@ public class MainMenuController : MonoBehaviour
         switch (y)
         {
             case 1:
-                howToPlayGameName.text = "How To Play " + "Sauna";
-                howToPlayText.text = "Move between planks with W and S to Dodge steamClouds!";
+                howToPlayGameName.text = "How To Play Sauna";
+                howToPlayText.text = "Move between planks with W and S to Dodge steamclouds!";
                 break;
             case 2:
-                howToPlayGameName.text = "How To Play " + "Bar Night";
-                howToPlayText.text = "Dodge objects by moving with A and D while you are continually swaying left or right from drinking too much!";
+                howToPlayGameName.text = "How To Play Bar Night";
+                howToPlayText.text = "Dodge objects by moving with A and D while you are continuosly swaying left or right from drinking too much!";
                 break;
             case 3:
-                howToPlayGameName.text = "How To Play " + "Christmas Buffet";
+                howToPlayGameName.text = "How To Play Christmas Buffet";
                 howToPlayText.text = "Make sure A, S or D is being pressed while food is coming into the marked spot to eat it!";
                 break;
             case 4:
-                howToPlayGameName.text = "How To Play " + "Santa's Flight";
+                howToPlayGameName.text = "How To Play Santa's Flight";
                 howToPlayText.text = "Drop presents into chimneys with S";
                 break;
             case 5:
-                howToPlayGameName.text = "How To Play " + "Fireworks";
+                howToPlayGameName.text = "How To Play Fireworks";
                 howToPlayText.text = "Aim with the mouse and hold Left Click to gather power for a shot and try to hit the target";
                 break;
             case 6:
-                howToPlayGameName.text = "How To Play " + "Ice Fishing";
+                howToPlayGameName.text = "How To Play Ice Fishing";
                 howToPlayText.text = "Tap spacebar to ascend your fishing hook. Catch fish by hitting their mouth with your hook and then reel them up!";
                 break;
         }
