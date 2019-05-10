@@ -13,13 +13,14 @@ public class MainMenuController : MonoBehaviour
     public GameObject mainScreen, leaderboardMenuScreen, leaderboardScreen, howToPlayMenuScreen, howToPlayScreen;
     public Text nameText;
     public InputField playerName;
-    public Button nameButton, leaderBoardsButton, backToMenuButton, backFromScores, howToPlayButton, backFromHowToPlayButton, backFromGuides;
+    public Button nameButton, leaderBoardsButton, backToMenuButton, backFromScores, howToPlayButton, backFromHowToPlayButton, backFromGuides, exit;
     public Button saunaButton, barNightButton, buffetButton, santaButton, fireworksButton, iceFishingButton;    //Add more buttons here for more games
     public Button saunaLB, barNightLB, buffetLB, santaLB, fireworksLB, iceFishingLB;    //Add more buttons here for more games
     public Button saunaHtP, barNightHtP, buffetHtP, santaHtP, fireworksHtP, iceFishingHtP; // Add more buttons here for more games
 
     void Start()
     {
+        
         playerName.text = PlayerPrefs.GetString("Name");
         nameButton.onClick.AddListener(AddName);
 
@@ -29,7 +30,7 @@ public class MainMenuController : MonoBehaviour
         leaderBoardsButton.onClick.AddListener(GoToLeaderBoards);
         backToMenuButton.onClick.AddListener(GoToMainMenu);
         backFromScores.onClick.AddListener(GoToLeaderBoards);
-
+        exit.onClick.AddListener(ExitGame);
 
         saunaButton.onClick.AddListener(delegate { StartGame(1); });
         barNightButton.onClick.AddListener(delegate { StartGame(2); });
@@ -184,5 +185,9 @@ public class MainMenuController : MonoBehaviour
                 howToPlayText.text = "Tap spacebar to ascend your fishing hook. Catch fish by hitting their mouth with your hook and then reel them up!";
                 break;
         }
+    }
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }

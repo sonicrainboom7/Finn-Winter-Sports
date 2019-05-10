@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Assets/Assets/MiniGames/Fireworks/FireworksGame.unity
     guid: b854566397d3de342bccd9790d4fda98
+  - enabled: 1
+    path: Assets/Assets/Assets/MiniGames/Ice Fishing v2/Ice Fishing/IceFishing.unity
+    guid: 6cd4123639e2f4544ba678e65f5f7a22
   m_configObjects: {}

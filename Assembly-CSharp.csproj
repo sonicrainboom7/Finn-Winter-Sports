@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Assets\Assets\All purpose scripts\Pausehandler.cs" />
      <Compile Include="Assets\Assets\Assets\MainMenu\ButtonHandler.cs" />
      <Compile Include="Assets\Assets\Assets\MainMenu\MainMenuController.cs" />
      <Compile Include="Assets\Assets\Assets\MiniGames\Bar Night\BarNightScripts\BarNightGameController.cs" />
@@ -66,14 +67,20 @@
      <Compile Include="Assets\Assets\Assets\MiniGames\Christmas Buffet\BuffetScripts\FoodMover.cs" />
      <Compile Include="Assets\Assets\Assets\MiniGames\Christmas Buffet\BuffetScripts\FoodSpawner.cs" />
      <Compile Include="Assets\Assets\Assets\MiniGames\Fireworks\Fireworks Scripts\AimingControls.cs" />
+     <Compile Include="Assets\Assets\Assets\MiniGames\Fireworks\Fireworks Scripts\DestroySelf.cs" />
      <Compile Include="Assets\Assets\Assets\MiniGames\Fireworks\Fireworks Scripts\FireworkScript.cs" />
      <Compile Include="Assets\Assets\Assets\MiniGames\Fireworks\Fireworks Scripts\FireworksGameController.cs" />
      <Compile Include="Assets\Assets\Assets\MiniGames\Fireworks\Fireworks Scripts\FireworksLeaderBoard.cs" />
+     <Compile Include="Assets\Assets\Assets\MiniGames\Fireworks\Fireworks Scripts\FireworksParticle.cs" />
      <Compile Include="Assets\Assets\Assets\MiniGames\Fireworks\Fireworks Scripts\ShootingControls.cs" />
-     <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing\IceScripts\Destroy.cs" />
-     <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing\IceScripts\Fish.cs" />
-     <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing\IceScripts\Hook.cs" />
-     <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing\IceScripts\Spawner.cs" />
+     <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing v2\Ice Fishing\IceScripts\Destroy.cs" />
+     <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing v2\Ice Fishing\IceScripts\Fish.cs" />
+     <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing v2\Ice Fishing\IceScripts\Hook.cs" />
+     <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing v2\Ice Fishing\IceScripts\IceFishingGameController.cs" />
+     <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing v2\Ice Fishing\IceScripts\IceFishingLeaderboard.cs" />
+     <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing v2\Ice Fishing\IceScripts\Line.cs" />
+     <Compile Include="Assets\Assets\Assets\MiniGames\Ice Fishing v2\Ice Fishing\IceScripts\Spawner.cs" />
+     <Compile Include="Assets\Assets\Assets\MiniGames\SantaPresents\SantaScripts\CameraFollow.cs" />
      <Compile Include="Assets\Assets\Assets\MiniGames\SantaPresents\SantaScripts\SantaControls.cs" />
      <Compile Include="Assets\Assets\Assets\MiniGames\SantaPresents\SantaScripts\SantaGameController.cs" />
      <Compile Include="Assets\Assets\Assets\MiniGames\SantaPresents\SantaScripts\SantaLeaderBoard.cs" />
@@ -82,17 +89,26 @@
      <Compile Include="Assets\Assets\Assets\MiniGames\Sauna\SaunaScripts\SaunaLeaderBoard.cs" />
      <Compile Include="Assets\Assets\Assets\MiniGames\Sauna\SaunaScripts\SaunaPlayer.cs" />
      <Compile Include="Assets\Assets\Assets\MiniGames\Sauna\SaunaScripts\SaunaSteamMover.cs" />
+ <Reference Include="Unity.VectorGraphics">
+ <HintPath>C:/Users/Omistaja/Documents/Finn-Winter-Sports/Library/ScriptAssemblies/Unity.VectorGraphics.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.InternalAPIEditorBridge.003">
+ <HintPath>C:/Users/Omistaja/Documents/Finn-Winter-Sports/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.003.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/2570P/Documents/Finn-Winter-Sports/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/Omistaja/Documents/Finn-Winter-Sports/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/2570P/Documents/Finn-Winter-Sports/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/Omistaja/Documents/Finn-Winter-Sports/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/2570P/Documents/Finn-Winter-Sports/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/Omistaja/Documents/Finn-Winter-Sports/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.VectorGraphics.Editor">
+ <HintPath>C:/Users/Omistaja/Documents/Finn-Winter-Sports/Library/ScriptAssemblies/Unity.VectorGraphics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/2570P/Documents/Finn-Winter-Sports/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/Omistaja/Documents/Finn-Winter-Sports/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -293,10 +309,10 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Users/2570P/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+ <HintPath>C:/Users/Omistaja/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.StandardEvents">
- <HintPath>C:/Users/2570P/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/Omistaja/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>

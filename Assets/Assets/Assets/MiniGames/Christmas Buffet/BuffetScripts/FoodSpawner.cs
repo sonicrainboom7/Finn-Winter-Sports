@@ -24,15 +24,15 @@ public class FoodSpawner : MonoBehaviour
 
             if (!isSpawning)
             {
-                float reducedMinWait = minWait / ((controllerScript.time / 60) + 1);
-                float reducedMaxWait = maxWait / ((controllerScript.time / 60) + 1);
-                if (reducedMinWait <= 1f)
+                float reducedMinWait = minWait / ((controllerScript.time / 30) + 1);
+                float reducedMaxWait = maxWait / ((controllerScript.time / 30) + 1);
+                if (reducedMinWait <= 0.25f)
                 {
-                    reducedMinWait = 1f;
+                    reducedMinWait = 0.25f;
                 }
-                if (reducedMaxWait <= 2.5f)
+                if (reducedMaxWait <= 1f)
                 {
-                    reducedMaxWait = 2.5f;
+                    reducedMaxWait = 1f;
                 }
                 float timer = Random.Range(reducedMinWait, reducedMaxWait);
                 Invoke("SpawnObject", timer);

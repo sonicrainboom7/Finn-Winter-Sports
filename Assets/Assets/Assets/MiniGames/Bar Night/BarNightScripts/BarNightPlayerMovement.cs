@@ -20,6 +20,7 @@ public class BarNightPlayerMovement : MonoBehaviour {
     public AudioSource beerSource;
     public AudioClip obstacleHit;
     public AudioSource obstacleSource;
+    public float moveSmoother;
     // Use this for initialization
     void Start () {
         startDirectionTimer = directionTimer;
@@ -30,6 +31,7 @@ public class BarNightPlayerMovement : MonoBehaviour {
         lives.text = "Lives : " + hp;
         rend = GameObject.Find("Juoksu_1").GetComponent<SpriteRenderer>();
         walkCycleTimer = 0;
+        moveSmoother = 0f;
 	}
 
 	
@@ -69,15 +71,15 @@ public class BarNightPlayerMovement : MonoBehaviour {
                     break;
             }
         }
-        if (moveLeft == true)
+        if (moveLeft == true && moveSmoother > -2)
         {
-            this.transform.Translate((-2 * drunkenessLevel) * Time.deltaTime, 0, 0);
+            moveSmoother -= Time.deltaTime;
         }
-        if (moveRight == true)
+        if (moveRight == true && moveSmoother < 2)
         {
-            this.transform.Translate((2 * drunkenessLevel) * Time.deltaTime, 0, 0);
+            moveSmoother += Time.deltaTime;
         }
-      
+        this.transform.Translate((moveSmoother * drunkenessLevel) * Time.deltaTime, 0, 0);
     }
 
     private void OnTriggerEnter(Collider col)

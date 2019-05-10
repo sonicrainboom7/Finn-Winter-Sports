@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class IceFishingGameController : MonoBehaviour {
     public float score;   // Score for this game. being more drunk means quicker points
     private float realTime;
+    public float timeLimit;
     public bool timeRunning;
     public GameObject endCanvas;
     public Button leaveGame;
@@ -30,9 +31,9 @@ public class IceFishingGameController : MonoBehaviour {
         {
             realTime += Time.deltaTime;
             pointsText.text = "Points : " + (Mathf.Round(score * 100f) / 100f);
-			timeText.text = "Time : " + Mathf.Round(40f-realTime);
+			timeText.text = "Time : " + Mathf.Round(timeLimit-realTime);
         }
-		if (realTime > 40 && timeRunning == true) {
+		if (realTime > timeLimit && timeRunning == true) {
 			GameOver();
         }
 	}

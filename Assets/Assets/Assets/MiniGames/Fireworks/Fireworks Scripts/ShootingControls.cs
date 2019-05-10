@@ -14,6 +14,7 @@ public class ShootingControls : MonoBehaviour {
     public float shotCount;
     private float windSpeed;
     public AudioSource launchSound, bangSound;
+    public GameObject fireworksParticle;
     Vector3 dir;
 	// Use this for initialization
 	void Start () {
@@ -22,6 +23,7 @@ public class ShootingControls : MonoBehaviour {
         windSpeed = Mathf.Round(Random.Range(-10f, 10f));
         
 	}
+
 
    
 	
@@ -70,8 +72,8 @@ public class ShootingControls : MonoBehaviour {
             instFirework.GetComponent<Rigidbody>().AddForce(-(transform.right * Mathf.Abs(windSpeed)), ForceMode.Impulse);
 
         }
-        Destroy(instFirework, 5f);
-        bangSound.PlayDelayed(5f);
+        Destroy(instFirework, 4f);
+        bangSound.PlayDelayed(4f);
         //Debug.Log((-dir * (power + windSpeed)));
     }
 }
