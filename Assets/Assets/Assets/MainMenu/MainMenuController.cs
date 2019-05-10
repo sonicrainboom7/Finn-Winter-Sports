@@ -20,7 +20,7 @@ public class MainMenuController : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Testing");
+        
         playerName.text = PlayerPrefs.GetString("Name");
         nameButton.onClick.AddListener(AddName);
 
